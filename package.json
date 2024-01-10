@@ -15,6 +15,10 @@
     "test:types": "tsd -t ./index.d.ts",
     "posttest:types": "npm run clean:node"
   },
+  "files": [
+    "{api,eventsub}/**/*.{js,js.map,d.ts,d.ts.map,mjs}",
+    "index.{js,js.map,d.ts,d.ts.map,mjs}"
+  ],
   "keywords": [
     "twitch",
     "types"
