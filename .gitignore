@@ -1,0 +1,14 @@
+node_modules/
+
+# Custom ESLint rules
+.eslintplugin/*
+!.eslintplugin/index.ts
+!.eslintplugin/tsconfig.json
+
+**/*.js
+**/*.map
+**/*.d.ts
+**/*.mjs
+
+# macOS files
+.DS_Store
