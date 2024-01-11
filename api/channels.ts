@@ -57,7 +57,7 @@ export interface GetChannelInformationParams {
   /**
    * The ID of the broadcaster whose channel you want to get. To specify more than one ID, include this parameter for each broadcaster you want to get. For example, `broadcaster_id=1234&broadcaster_id=5678`. You may specify a maximum of 100 IDs. The API ignores duplicate IDs and IDs that are not found.
    */
-  broadcaster_id: string[];
+  broadcaster_id: string | string[];
 }
 
 export interface GetChannelInformationResponse extends Response<Channel[]> {}

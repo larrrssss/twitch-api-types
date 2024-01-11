@@ -97,11 +97,11 @@ export interface GetUsersParams {
   /**
    * The ID of the user to get. To specify more than one user, include the id parameter for each user to get. For example, `id=1234&id=5678`. The maximum number of IDs you may specify is 100.
    */
-  id?: string[];
+  id?: string | string[];
   /**
    * The login name of the user to get. To specify more than one user, include the login parameter for each user to get. For example, `login=foo&login=bar`. The maximum number of login names you may specify is 100.
    */
-  login?: string[];
+  login?: string | string[];
 }
 
 export interface GetUsersResponse extends Response<User[]> {}
