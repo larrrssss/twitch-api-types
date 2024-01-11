@@ -6,7 +6,7 @@
   - [x] Ads
   - [x] Analytics
   - [ ] Bits
-  - [ ] Channels
+  - [x] Channels
   - [ ] Channel Points
   - [ ] Charity
   - [ ] Chat
