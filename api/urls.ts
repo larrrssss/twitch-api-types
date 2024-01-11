@@ -44,4 +44,25 @@ export enum APIEndpoint {
    * GET
    */
   GetChannelFollowers = `${baseUrl}/channels/followers`,
+  // Users
+  /**
+   * GET
+   */
+  GetUsers = `${baseUrl}/users`,
+  /**
+   * PUT
+   */
+  UpdateUser = `${baseUrl}/users`,
+  /**
+   * GET
+   */
+  GetUserBlockList = `${baseUrl}/users/blocks`,
+  /**
+   * PUT
+   */
+  BlockUser = `${baseUrl}/users/blocks`,
+  /**
+   * DELETE
+   */
+  UnblockUser = `${baseUrl}/users/blocks`,
 }
