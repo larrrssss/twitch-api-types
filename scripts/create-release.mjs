@@ -1,3 +1,4 @@
+import process from 'node:process';
 import { readFile } from 'node:fs/promises';
 import { Octokit } from '@octokit/action';
 
