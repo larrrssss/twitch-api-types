@@ -4,13 +4,13 @@
   "description": "",
   "scripts": {
     "build:node": "tsc",
-    "clean:node": "rimraf -g {api,eventsub}/**/*.{js,mjs,d.ts,*map} index.{js,mjs,d.ts,*map}",
+    "clean:node": "rimraf -g {api,eventsub,authentication}/**/*.{js,mjs,d.ts,*map} index.{js,mjs,d.ts,*map}",
     "clean": "run-p clean:*",
-    "lint": "prettier --write . && eslint --fix --ext mjs,ts {api,eventsub}/**/*.ts index.ts",
+    "lint": "prettier --write . && eslint --fix --ext mjs,ts {api,eventsub,authentication}/**/*.ts index.ts",
     "postpublish": "npm run clean:node",
     "prepare": "tsc",
     "prepublishOnly": "run-s clean test:lint build:node",
-    "test:lint": "prettier --check . && eslint --ext mjs,ts {api,eventsub}/**/*.ts index.ts",
+    "test:lint": "prettier --check . && eslint --ext mjs,ts {api,eventsub,authentication}/**/*.ts index.ts",
     "pretest:types": "tsc",
     "test:types": "tsd -t ./index.d.ts",
     "posttest:types": "npm run clean:node",
@@ -19,7 +19,7 @@
     "postversion": "git push origin main && git push origin main --tags"
   },
   "files": [
-    "{api,eventsub}/**/*.{js,js.map,d.ts,d.ts.map,mjs}",
+    "{api,eventsub,authentication}/**/*.{js,js.map,d.ts,d.ts.map,mjs}",
     "index.{js,js.map,d.ts,d.ts.map,mjs}"
   ],
   "keywords": [

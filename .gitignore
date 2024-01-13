@@ -15,6 +15,11 @@ api/**/*.map
 api/**/*.d.ts
 api/**/*.mjs
 
+authentication/**/*.js
+authentication/**/*.map
+authentication/**/*.d.ts
+authentication/**/*.mjs
+
 eventsub/**/*.js
 eventsub/**/*.map
 eventsub/**/*.d.ts
