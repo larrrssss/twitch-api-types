@@ -9,6 +9,7 @@ export enum OAuthGrantType {
   ClientCredentials = 'client_credentials',
   AuthorizationCode = 'authorization_code',
   DeviceCode = 'device_code',
+  RefreshToken = 'refresh_token',
 }
 
 export interface OAuthAuthorizeResponse {
