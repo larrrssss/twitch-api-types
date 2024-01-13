@@ -13,7 +13,8 @@
     "test:lint": "prettier --check . && eslint --ext mjs,ts {api,eventsub}/**/*.ts index.ts",
     "pretest:types": "tsc",
     "test:types": "tsd -t ./index.d.ts",
-    "posttest:types": "npm run clean:node"
+    "posttest:types": "npm run clean:node",
+    "postversion": "git add . && git push"
   },
   "files": [
     "{api,eventsub}/**/*.{js,js.map,d.ts,d.ts.map,mjs}",
