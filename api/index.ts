@@ -4,3 +4,6 @@ export * from './users';
 export * from './channels';
 export * from './label';
 export * from './urls';
+export * from './bits';
+export * from './images';
+export * from './cheermote';

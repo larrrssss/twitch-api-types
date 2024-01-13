@@ -23,6 +23,15 @@ export enum APIEndpoint {
    * GET
    */
   GetGameAnalytics = `${baseUrl}/analytics/games`,
+  // Bits
+  /**
+   * GET
+   */
+  GetBitsLeaderboard = `${baseUrl}/bits/leaderboard`,
+  /**
+   * GET
+   */
+  GetCheermotes = `${baseUrl}/bits/cheermotes`,
   // Channels
   /**
    * GET

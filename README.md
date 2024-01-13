@@ -5,7 +5,7 @@
 - API
   - [x] Ads
   - [x] Analytics
-  - [ ] Bits
+  - [x] Bits
   - [x] Channels
   - [ ] Channel Points
   - [ ] Charity
