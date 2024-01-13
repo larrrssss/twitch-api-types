@@ -14,7 +14,7 @@
     "pretest:types": "tsc",
     "test:types": "tsd -t ./index.d.ts",
     "posttest:types": "npm run clean:node",
-    "postversion": "git add . && git push"
+    "postversion": "git add . && git push origin main"
   },
   "files": [
     "{api,eventsub}/**/*.{js,js.map,d.ts,d.ts.map,mjs}",
