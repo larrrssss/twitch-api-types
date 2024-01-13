@@ -21,7 +21,7 @@ const release = await octokit.repos.createRelease({
   repo: REPOSITORY,
   tag_name: packageJson.version,
   name: packageJson.version,
-  body: releaseChangelog,
+  body: releaseChangelog.body,
 });
 
 console.log(`✅ Done! Release created at ${release.data.html_url}`);
