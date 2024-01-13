@@ -60,6 +60,7 @@ export interface OAuthDeviceTokenResponse {
 export interface OAuthRefreshResponse {
   access_token: string;
   refresh_token: string;
+  expires_in: number;
   scope: Scope[];
   token_type: string;
 }
