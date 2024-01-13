@@ -37,5 +37,8 @@
     "rimraf": "^5.0.5",
     "tsd": "^0.30.3",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@octokit/action": "^6.0.7"
   }
 }

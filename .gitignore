@@ -5,10 +5,20 @@ node_modules/
 !.eslintplugin/index.ts
 !.eslintplugin/tsconfig.json
 
-**/*.js
-**/*.map
-**/*.d.ts
-**/*.mjs
+index/*.js
+index/*.map
+index/*.d.ts
+index/*.mjs
+
+api/**/*.js
+api/**/*.map
+api/**/*.d.ts
+api/**/*.mjs
+
+eventsub/**/*.js
+eventsub/**/*.map
+eventsub/**/*.d.ts
+eventsub/**/*.mjs
 
 # macOS files
 .DS_Store
