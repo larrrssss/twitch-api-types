@@ -8,10 +8,16 @@ const packageJson = JSON.parse(
 );
 const [OWNER, REPOSITORY] = process.env.GITHUB_REPOSITORY.split('/');
 
+const latestRelease = await octokit.repos.getLatestRelease({
+  owner: OWNER,
+  repo: REPOSITORY,
+});
+
 const { data: releaseChangelog } = await octokit.repos.generateReleaseNotes({
   owner: OWNER,
   repo: REPOSITORY,
   tag_name: packageJson.version,
+  previous_tag_name: latestRelease.data.tag_name,
 });
 
 console.log(`🎉 Creating new release for twitch-api-types ${packageJson.version}`);
