@@ -45,7 +45,7 @@ export interface GetBitsLeaderboardParams {
    *
    * If your start date uses the ‘+’ offset operator (for example, `2022-01-01T00:00:00.0+05:00`), you must URL encode the start date.
    */
-  started_at?: Date;
+  started_at?: string;
   /**
    * An ID that identifies a user that cheered bits in the channel. If count is greater than 1, the response may include users ranked above and below the specified user. To get the leaderboard’s top leaders, don’t specify a user ID.
    */
@@ -84,11 +84,11 @@ export interface GetBitsLeaderboardResponse
     /**
      * The reporting window’s start date.
      */
-    started_at: Date;
+    started_at: string;
     /**
      * The reporting window’s start date.
      */
-    ended_at: Date;
+    ended_at: string;
   };
   /**
    * The number of ranked users in `data`. This is the value in the count query parameter or the total number of entries on the leaderboard, whichever is less.

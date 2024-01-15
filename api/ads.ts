@@ -56,11 +56,11 @@ export interface GetAdScheduleResponse
       /**
        * The UTC timestamp when the broadcaster will gain an additional snooze, in RFC3339 format.
        */
-      snooze_refresh_at: Date;
+      snooze_refresh_at: string;
       /**
        * The UTC timestamp of the broadcaster’s next scheduled ad, in RFC3339 format. Empty if the channel has no ad scheduled or is not live.
        */
-      next_ad_at: Date;
+      next_ad_at: string;
       /**
        * The length in seconds of the scheduled upcoming ad break.
        */
@@ -68,7 +68,7 @@ export interface GetAdScheduleResponse
       /**
        * The UTC timestamp of the broadcaster’s last ad-break, in RFC3339 format. Empty if the channel has not run an ad or is not live.
        */
-      last_ad_at: Date;
+      last_ad_at: string;
       /**
        * The amount of pre-roll free time remaining for the channel in seconds. Returns 0 if they are currently not pre-roll free.
        */
@@ -98,10 +98,10 @@ export interface SnoozeNextAdResponse
       /**
        * The UTC timestamp when the broadcaster will gain an additional snooze, in RFC3339 format.
        */
-      snooze_refresh_at: Date;
+      snooze_refresh_at: string;
       /**
        * The UTC timestamp of the broadcaster’s next scheduled ad, in RFC3339 format.
        */
-      next_ad_at: Date;
+      next_ad_at: string;
     }[]
   > {}

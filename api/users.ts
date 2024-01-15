@@ -85,7 +85,7 @@ export type User = {
   /**
    * The UTC date and time that the user’s account was created. The timestamp is in RFC3339 format.
    */
-  created_at: Date;
+  created_at: string;
 };
 
 /**

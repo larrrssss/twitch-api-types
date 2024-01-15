@@ -145,7 +145,7 @@ export interface GetChannelEditorsResponse
       /**
        * The date and time, in RFC3339 format, when the user became one of the broadcaster’s editors.
        */
-      created_at: Date;
+      created_at: string;
     }[]
   > {}
 
@@ -186,7 +186,7 @@ export interface GetFollowedChannelsResponse
     /**
      * The UTC timestamp when the user started following the broadcaster.
      */
-    followed_at: Date;
+    followed_at: string;
   }> {
   /**
    * The total number of broadcasters that the user follows. As someone pages through the list, the number may change as the user follows or unfollows broadcasters.
@@ -221,7 +221,7 @@ export interface GetChannelFollowersResponse
     /**
      * The UTC timestamp when the user started following the broadcaster.
      */
-    followed_at: Date;
+    followed_at: string;
     /**
      * An ID that uniquely identifies the user that’s following the broadcaster.
      */

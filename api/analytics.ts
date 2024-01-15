@@ -20,11 +20,11 @@ interface BaseAnalyticsResponse {
     /**
      * The reporting window’s start date.
      */
-    started_at: Date;
+    started_at: string;
     /**
      * The reporting window’s end date.
      */
-    ended_at: Date;
+    ended_at: string;
   };
 }
 
@@ -49,13 +49,13 @@ export interface GetExtensionAnalyticsParams extends PaginationParams {
    *
    * The report contains one row of data for each day in the reporting window.
    */
-  started_at?: Date;
+  started_at?: string;
   /**
    * The reporting window’s end date, in RFC3339 format. Set the time portion to zeroes (for example, 2021-10-27T00:00:00Z). The report is inclusive of the end date.
    *
    * Specify an end date only if you provide a start date. Because it can take up to two days for the data to be available, you must specify an end date that’s earlier than today minus one to two days. If not, the API ignores your end date and uses an end date that is today minus one to two days.
    */
-  ended_at?: Date;
+  ended_at?: string;
   /**
    * The maximum number of report URLs to return per page in the response. The minimum page size is 1 URL per page and the maximum is 100 URLs per page. The default is 20.
    *
@@ -101,13 +101,13 @@ export interface GetGameAnalyticsParams extends PaginationParams {
    *
    * The report contains one row of data for each day in the reporting window.
    */
-  started_at?: Date;
+  started_at?: string;
   /**
    * The reporting window’s end date, in RFC3339 format. Set the time portion to zeroes (for example, 2021-10-22T00:00:00Z). The report is inclusive of the end date.
    *
    * Specify an end date only if you provide a start date. Because it can take up to two days for the data to be available, you must specify an end date that’s earlier than today minus one to two days. If not, the API ignores your end date and uses an end date that is today minus one to two days.
    */
-  ended_at?: Date;
+  ended_at?: string;
   /**
    * The maximum number of report URLs to return per page in the response. The minimum page size is 1 URL per page and the maximum is 100 URLs per page. The default is 20.
    *
