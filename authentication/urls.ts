@@ -4,4 +4,5 @@ export enum OAuthEndpoints {
   Authorize = `${baseUrl}/authorize`,
   Token = `${baseUrl}/token`,
   Device = `${baseUrl}/device`,
+  Revoke = `${baseUrl}/revoke`,
 }
