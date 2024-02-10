@@ -22,7 +22,7 @@ pnpm add twitch-api-types
   - [x] Analytics
   - [x] Bits
   - [x] Channels
-  - [ ] Channel Points
+  - [x] Channel Points
   - [ ] Charity
   - [ ] Chat
   - [ ] Clips
