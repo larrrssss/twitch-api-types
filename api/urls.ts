@@ -78,6 +78,15 @@ export enum APIEndpoint {
    * PATCH
    */
   UpdateRedemptionStatus = `${baseUrl}/channel_points/custom_rewards/redemptions`,
+  // Charity
+  /**
+   * GET
+   */
+  GetCharityCampaign = `${baseUrl}/charity/campaigns`,
+  /**
+   * GET
+   */
+  GetCharityCampaignDonations = `${baseUrl}/charity/donations`,
   // Moderation
   /**
    * POST

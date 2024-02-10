@@ -23,7 +23,7 @@ pnpm add twitch-api-types
   - [x] Bits
   - [x] Channels
   - [x] Channel Points
-  - [ ] Charity
+  - [x] Charity
   - [ ] Chat
   - [ ] Clips
   - [ ] CCLs

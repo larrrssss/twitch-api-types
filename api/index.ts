@@ -9,3 +9,4 @@ export * from './images';
 export * from './cheermote';
 export * from './moderation';
 export * from './channel-points';
+export * from './charity';
