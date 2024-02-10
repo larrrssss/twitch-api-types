@@ -53,6 +53,31 @@ export enum APIEndpoint {
    * GET
    */
   GetChannelFollowers = `${baseUrl}/channels/followers`,
+  // Channel Points
+  /**
+   * POST
+   */
+  CreateCustomRewards = `${baseUrl}/channel_points/custom_rewards`,
+  /**
+   * DELETE
+   */
+  DeleteCustomReward = `${baseUrl}/channel_points/custom_rewards`,
+  /**
+   * GET
+   */
+  GetCustomReward = `${baseUrl}/channel_points/custom_rewards`,
+  /**
+   * GET
+   */
+  GetCustomRewardRedemption = `${baseUrl}/channel_points/custom_rewards/redemptions`,
+  /**
+   * PATCH
+   */
+  UpdateCustomReward = `${baseUrl}/channel_points/custom_rewards`,
+  /**
+   * PATCH
+   */
+  UpdateRedemptionStatus = `${baseUrl}/channel_points/custom_rewards/redemptions`,
   // Moderation
   /**
    * POST
