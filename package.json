@@ -1,6 +1,6 @@
 {
   "name": "twitch-api-types",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": " Latest Twitch API Typings",
   "scripts": {
     "build:node": "tsc",
