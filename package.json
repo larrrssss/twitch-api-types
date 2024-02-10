@@ -1,7 +1,7 @@
 {
   "name": "twitch-api-types",
   "version": "0.6.1",
-  "description": "",
+  "description": " Latest Twitch API Typings",
   "scripts": {
     "build:node": "tsc",
     "clean:node": "rimraf -g {api,eventsub,authentication}/**/*.{js,mjs,d.ts,*map} index.{js,mjs,d.ts,*map}",
