@@ -1,6 +1,6 @@
 import type { PaginatedResponse, PaginationParams, Response } from './responses';
 
-export type CustomRewardImageSet = {
+export interface CustomRewardImageSet {
   /**
    * The URL to a small version of the image.
    */
@@ -13,9 +13,9 @@ export type CustomRewardImageSet = {
    * The URL to a large version of the image.
    */
   url_4x: string;
-};
+}
 
-export type CustomReward = {
+export interface CustomReward {
   /**
    * The ID that uniquely identifies the broadcaster.
    */
@@ -123,7 +123,7 @@ export type CustomReward = {
    * The timestamp of when the cooldown period expires. Is **null** if the reward isn’t in a cooldown state (see the `global_cooldown_setting` field).
    */
   cooldown_expires_at: string | null;
-};
+}
 
 export enum CustomRewardRedemptionStatus {
   Canceled = 'CANCELED',
@@ -131,7 +131,7 @@ export enum CustomRewardRedemptionStatus {
   Unfulfilled = 'UNFULFILLED',
 }
 
-export type CustomRewardRedemption = {
+export interface CustomRewardRedemption {
   /**
    * The ID that uniquely identifies the broadcaster.
    */
@@ -167,9 +167,9 @@ export type CustomRewardRedemption = {
   /**
    * The state of the redemption. Possible values are:
    *
-   *   * CANCELED
-   *   * FULFILLED
-   *   * UNFULFILLED
+   * * CANCELED
+   * * FULFILLED
+   * * UNFULFILLED
    */
   status: CustomRewardRedemptionStatus;
   /**
@@ -197,7 +197,7 @@ export type CustomRewardRedemption = {
      */
     cost: number;
   };
-};
+}
 
 export interface CreateCustomRewardsParams {
   /**
@@ -284,7 +284,7 @@ export interface GetCustomRewardParams {
    *
    * Duplicate IDs are ignored. The response contains only the IDs that were found. If none of the IDs were found, the response is 404 Not Found.
    */
-  id?: string | string[];
+  id?: string[] | string;
   /**
    * A Boolean value that determines whether the response contains only the custom rewards that the app may manage (the app is identified by the ID in the Client-Id header). Set to **true** to get only the custom rewards that the app may manage. The default is **false**.
    */
@@ -319,7 +319,7 @@ export interface GetCustomRewardRedemptionParams extends PaginationParams {
    *
    * Duplicate IDs are ignored. The response contains only the IDs that were found. If none of the IDs were found, the response is 404 Not Found.
    */
-  id?: string | string[];
+  id?: string[] | string;
   /**
    * The order to sort redemptions by. The possible case-sensitive values are:
    *
@@ -328,7 +328,7 @@ export interface GetCustomRewardRedemptionParams extends PaginationParams {
    *
    * The default is OLDEST.
    */
-  sort?: 'OLDEST' | 'NEWEST';
+  sort?: 'NEWEST' | 'OLDEST';
   /**
    * The maximum number of redemptions to return per page in the response. The minimum page size is 1 redemption per page and the maximum is 50. The default is 20.
    */
@@ -414,7 +414,7 @@ export interface UpdateCustomRewardRedemptionStatusParams {
   /**
    * A list of IDs that identify the redemptions to update. To specify more than one ID, include this parameter for each redemption you want to update. For example, `id=1234&id=5678`. You may specify a maximum of 50 IDs.
    */
-  id: string | string[];
+  id: string[] | string;
   /**
    * The ID of the broadcaster that’s updating the redemption. This ID must match the user ID in the user access token.
    */

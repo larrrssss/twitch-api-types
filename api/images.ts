@@ -8,4 +8,4 @@ export enum Format {
   Static = 'static',
 }
 
-export type Size = '1' | '1.5' | '2' | '3' | '4';
+export type Size = '1.5' | '1' | '2' | '3' | '4';

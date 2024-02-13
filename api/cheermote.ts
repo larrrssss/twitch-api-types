@@ -4,7 +4,7 @@ export type CheermoteImageFormat = Record<Format, Record<Size, string>>;
 
 export type CheermoteImages = Record<Theme, CheermoteImageFormat>;
 
-export type CheermoteTier = {
+export interface CheermoteTier {
   /**
    * The minimum number of Bits that you must cheer at this tier level. The maximum number of Bits that you can cheer at this level is determined by the required minimum Bits of the next tier level minus 1. For example, if `min_bits` is 1 and `min_bits` for the next tier is 100, the Bits range for this tier level is 1 through 99. The minimum Bits value of the last tier is the maximum number of Bits you can cheer using this Cheermote. For example, 10000.
    */
@@ -36,9 +36,9 @@ export type CheermoteTier = {
    * The animated and static image sets for the Cheermote. The dictionary of images is organized by theme, format, and size. The theme keys are dark and light. Each theme is a dictionary of formats: animated and static. Each format is a dictionary of sizes: 1, 1.5, 2, 3, and 4. The value of each size contains the URL to the image.
    */
   images: CheermoteImages;
-};
+}
 
-export type Cheermote = {
+export interface Cheermote {
   /**
    * The name portion of the Cheermote string that you use in chat to cheer Bits. The full Cheermote string is the concatenation of {prefix} + {number of Bits}. For example, if the prefix is “Cheer” and you want to cheer 100 Bits, the full Cheermote string is Cheer100. When the Cheermote string is entered in chat, Twitch converts it to the image associated with the Bits tier that was cheered.
    */
@@ -47,4 +47,4 @@ export type Cheermote = {
    * A list of tier levels that the Cheermote supports. Each tier identifies the range of Bits that you can cheer at that tier level and an image that graphically identifies the tier level.
    */
   tiers: CheermoteTier[];
-};
+}

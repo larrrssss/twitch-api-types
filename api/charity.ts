@@ -1,6 +1,6 @@
 import type { PaginatedResponse, PaginationParams, Response } from './responses';
 
-export type CharityCampaignAmount = {
+export interface CharityCampaignAmount {
   /**
    * The monetary amount. The amount is specified in the currency’s minor unit. For example, the minor units for USD is cents, so if the amount is $5.50 USD, `value` is set to 550.
    */
@@ -15,9 +15,9 @@ export type CharityCampaignAmount = {
    * The ISO-4217 three-letter currency code that identifies the type of currency in `value`.
    */
   currency: string;
-};
+}
 
-export type CharityCampaign = {
+export interface CharityCampaign {
   /**
    * An ID that identifies the charity campaign.
    */
@@ -58,7 +58,7 @@ export type CharityCampaign = {
    * The campaign’s fundraising goal. This field is `null` if the broadcaster has not defined a fundraising goal.
    */
   target_amount: CharityCampaignAmount | null;
-};
+}
 
 export interface GetCharityCampaignParams {
   /**

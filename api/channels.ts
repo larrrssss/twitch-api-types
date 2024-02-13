@@ -1,7 +1,7 @@
-import type { PaginatedResponse, PaginationParams, Response } from './responses';
 import type { ContentClassificationLabel } from './label';
+import type { PaginatedResponse, PaginationParams, Response } from './responses';
 
-export type Channel = {
+export interface Channel {
   /**
    * An ID that uniquely identifies the broadcaster.
    */
@@ -46,7 +46,7 @@ export type Channel = {
    * Boolean flag indicating if the channel has branded content.
    */
   is_branded_content: boolean;
-};
+}
 
 /**
  * Get Channel Information
@@ -57,7 +57,7 @@ export interface GetChannelInformationParams {
   /**
    * The ID of the broadcaster whose channel you want to get. To specify more than one ID, include this parameter for each broadcaster you want to get. For example, `broadcaster_id=1234&broadcaster_id=5678`. You may specify a maximum of 100 IDs. The API ignores duplicate IDs and IDs that are not found.
    */
-  broadcaster_id: string | string[];
+  broadcaster_id: string[] | string;
 }
 
 export interface GetChannelInformationResponse extends Response<Channel[]> {}
