@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@octokit/action": "^3.18.1",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^6.18.1",
     "eslint": "^8.56.0",
     "npm-run-all": "^4.1.5",
