@@ -3,6 +3,7 @@
   "version": "0.8.0",
   "description": " Latest Twitch API Typings",
   "scripts": {
+    "build:ci": "tsc --noEmit --incremental false",
     "build:node": "tsc",
     "clean:node": "rimraf -g {api,eventsub,authentication}/**/*.{js,mjs,d.ts,*map} index.{js,mjs,d.ts,*map}",
     "clean": "run-p clean:*",
