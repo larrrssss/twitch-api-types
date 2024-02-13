@@ -1,4 +1,4 @@
-import { PaginatedResponse, PaginationParams, Response } from './responses';
+import type { PaginatedResponse, PaginationParams, Response } from './responses';
 
 export type CharityCampaignAmount = {
   /**

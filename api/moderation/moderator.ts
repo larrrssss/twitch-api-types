@@ -1,4 +1,4 @@
-import { PaginatedResponse, PaginationParams } from '../responses';
+import type { PaginatedResponse, PaginationParams } from '../responses';
 
 /**
  * Get Moderated Channels
@@ -49,7 +49,7 @@ export interface GetModeratorsParams extends PaginationParams {
    *
    * The returned list includes only the users from the list who are moderators in the broadcaster’s channel. The list is returned in the same order as you specified the IDs.
    */
-  user_id?: string | string[];
+  user_id?: string[] | string;
   /**
    * The maximum number of items to return per page in the response. The minimum page size is 1 item per page and the maximum is 100 items per page. The default is 20.
    */

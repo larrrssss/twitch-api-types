@@ -1,4 +1,4 @@
-import { PaginatedResponse, PaginationParams } from './responses';
+import type { PaginatedResponse, PaginationParams } from './responses';
 
 enum AnalyticsReportType {
   OverviewV2 = 'overview_v2',

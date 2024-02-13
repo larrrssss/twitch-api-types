@@ -1,11 +1,11 @@
-import { PaginatedResponse, PaginationParams, Response } from '../responses';
+import type { PaginatedResponse, PaginationParams, Response } from '../responses';
 
 /**
  * Get Blocked Terms
  * Extracted from https://dev.twitch.tv/docs/api/reference/#get-blocked-terms
  */
 
-export type BlockedTerm = {
+export interface BlockedTerm {
   /**
    * The broadcaster that owns the list of blocked terms.
    */
@@ -38,7 +38,7 @@ export type BlockedTerm = {
    * This field is **null** if the term was added manually or was permanently blocked by AutoMod.
    */
   expires_at: string | null;
-};
+}
 
 export interface GetBlockedTermsParams extends PaginationParams {
   /**

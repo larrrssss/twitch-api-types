@@ -1,4 +1,4 @@
-import { Format, Size, Theme } from './images';
+import type { Format, Size, Theme } from './images';
 
 export type CheermoteImageFormat = Record<Format, Record<Size, string>>;
 

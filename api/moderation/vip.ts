@@ -1,4 +1,4 @@
-import { PaginatedResponse, PaginationParams } from '../responses';
+import type { PaginatedResponse, PaginationParams } from '../responses';
 
 /**
  * Get VIPs
@@ -9,7 +9,7 @@ export interface GetVIPsParams extends PaginationParams {
   /**
    * Filters the list for specific VIPs. To specify more than one user, include the user_id parameter for each user to get. For example, `&user_id=1234&user_id=5678`. The maximum number of IDs that you may specify is 100. Ignores the ID of those users in the list that aren’t VIPs.
    */
-  user_id?: string | string[];
+  user_id?: string[] | string;
   /**
    * The ID of the broadcaster whose list of VIPs you want to get. This ID must match the user ID in the access token.
    */

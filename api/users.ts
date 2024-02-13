@@ -1,4 +1,4 @@
-import { PaginatedResponse, PaginationParams, Response } from './responses';
+import type { PaginatedResponse, PaginationParams, Response } from './responses';
 
 /**
  * The type of user.

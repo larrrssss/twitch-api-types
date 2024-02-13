@@ -1,4 +1,4 @@
-import { Response } from '../responses';
+import type { Response } from '../responses';
 
 /**
  * Check AutoMod Status

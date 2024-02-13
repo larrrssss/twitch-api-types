@@ -1,4 +1,4 @@
-import { Response } from '../responses';
+import type { Response } from '../responses';
 
 /**
  * Update Shield Mode Status

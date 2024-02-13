@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true
+  },
+  "include": ["api/**/*.ts", "eventsub/**/*.ts", "index.ts", "scripts"]
+}

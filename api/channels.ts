@@ -1,5 +1,5 @@
-import { PaginatedResponse, PaginationParams, Response } from './responses';
-import { ContentClassificationLabel } from './label';
+import type { PaginatedResponse, PaginationParams, Response } from './responses';
+import type { ContentClassificationLabel } from './label';
 
 export type Channel = {
   /**

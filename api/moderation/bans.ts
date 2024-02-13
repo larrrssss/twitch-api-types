@@ -1,4 +1,4 @@
-import { PaginatedResponse, PaginationParams, Response } from '../responses';
+import type { PaginatedResponse, PaginationParams, Response } from '../responses';
 
 /**
  * Get Banned Users
@@ -15,7 +15,7 @@ export interface GetBannedUsersParams extends PaginationParams {
    *
    * The returned list includes only those users that were banned or put in a timeout. The list is returned in the same order that you specified the IDs.
    */
-  user_id?: string | string[];
+  user_id?: string[] | string;
   /**
    * The maximum number of items to return per page in the response. The minimum page size is 1 item per page and the maximum is 100 items per page. The default is 20.
    */

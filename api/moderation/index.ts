@@ -14,9 +14,9 @@ export interface DeleteChatMessagesParams {
   moderator_id: string;
   /**
    * The ID of the message to remove. The id tag in the [PRIVMSG](https://dev.twitch.tv/docs/irc/tags#privmsg-tags) tag contains the message’s ID. Restrictions:
-   *   * The message must have been created within the last 6 hours.
-   *   * The message must not belong to the broadcaster.
-   *   * The message must not belong to another moderator.
+   *   The message must have been created within the last 6 hours.
+   *   The message must not belong to the broadcaster.
+   *   The message must not belong to another moderator.
    *
    * If not specified, the request removes all messages in the broadcaster’s chat room.
    */

@@ -1,5 +1,5 @@
-import { Response } from './responses';
-import { Cheermote } from './cheermote';
+import type { Response } from './responses';
+import type { Cheermote } from './cheermote';
 
 /**
  * Get Bits Leaderboard
